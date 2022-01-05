@@ -18,9 +18,9 @@ FROM node
 
 WORKDIR /source/Fullstack
 
-COPY package.json /source/Fullstack
+COPY package.json /source/Fullstack/
 
-RUN cd /source/Fullstack && npm i --only=production
+RUN cd /source/Fullstack/ && npm i --only=production
 
 COPY . .
 
